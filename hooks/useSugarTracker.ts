@@ -41,7 +41,7 @@ export const useSugarTracker = () => {
 
   const addFood = (name: string, sugar: number) => {
     const newFood: FoodItem = {
-      id: `${Date.now()}-${Math.random()}`,
+      id: crypto.randomUUID(),
       name,
       sugar,
       timestamp: Date.now(),
